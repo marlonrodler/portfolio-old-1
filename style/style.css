@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+}
+
+div.container-nav {
+    width: 100%;
+    height: 80px;
+    padding: 15px 100px;
+    background-color: #202020;
+}
+
+div.container-nav div.nav {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto;
+}
+
+div.container-nav div.nav div.nav-right ul, div.container-nav div.nav div.nav-right ul li a, div.container-nav div.nav div.nav-left a {
+    text-decoration: none;
+}
+
+div.container-nav div.nav div.nav-right ul li {
+    display: inline;
+}
+
+div.container-nav div.nav div.nav-right ul li a, div.container-nav div.nav div.nav-left a  {
+    color: #FFF;
+}
+
+div.container-nav div.nav div.nav-left a {
+    font-weight: 700;
+    font-size: 28px;
+    align-items: center;
+}
+
+div.container-nav div.nav div.nav-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.container-nav div.nav div.nav-left {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+div.container-nav div.nav div.nav-right ul li a {
+    padding: 15px;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+div.container-nav div.nav div.nav-right ul li+li {
+    margin-left: 15px;
+}
+
+div.container-nav div.nav div.nav-right ul li a:hover {
+    color: #FCDC8F;
+}
+
+div.container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+}
+
+div.container section{
+    width: 100%;
+    height: 280px;
+    background-image: url("../img/bg.jpg");
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+div.container section div.section-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.container section div.section-text {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+div.container section div.section-text div.apresentacao {
+    width: 100%;
+    height: auto;
+    margin: 56px 300px 15px 15px;
+    color: #FFF;
+}
+
+div.container section div.section-text div.apresentacao h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+}
+
+div.container section div.section-text div.apresentacao p {
+    font-weight: 500;
+    font-size: 28px;
+    mix-blend-mode: normal;
+}
+
+div.container section div.section-text div.apresentacao p span{
+    color: #FCDC8F;
+}
+
+div.container section div.section-text div.apresentacao p:nth-child(2) { 
+    margin-left: 60px;
+}
+
+div.container section div.section-text div.apresentacao p:nth-child(3) {
+    text-align: center;
+    margin-left: 180px;
+}
+
+div.container section div.section-img img {
+    position: relative;
+    width: 207px;
+    height: 207px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
