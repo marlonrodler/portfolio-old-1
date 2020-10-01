@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +7,24 @@
     font-family: Roboto;
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     background-color: #181818;
+}
+
+h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+p, h2, h1 {
+    color: #FFF;
 }
 
 div.container-nav {
@@ -38,7 +48,7 @@ div.container-nav div.nav div.nav-right ul li {
     display: inline;
 }
 
-div.container-nav div.nav div.nav-right ul li a, div.container-nav div.nav div.nav-left a  {
+div.container-nav div.nav div.nav-right ul li a, div.container-nav div.nav div.nav-left a {
     color: #FFF;
 }
 
@@ -78,11 +88,10 @@ div.container-nav div.nav div.nav-right ul li a:hover {
 div.container {
     width: 100%;
     height: 100%;
-    background-color: #fff;
-
+    background-color: #FFF;
 }
 
-div.container section{
+div.container section.apresentacao {
     width: 100%;
     height: 280px;
     background-image: url("../img/bg.jpg");
@@ -90,26 +99,25 @@ div.container section{
     grid-template-columns: 40% 60%;
 }
 
-div.container section div.section-img {
+div.container section.apresentacao div.section-img {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-div.container section div.section-text {
+div.container section.apresentacao div.section-text {
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-div.container section div.section-text div.apresentacao {
+div.container section.apresentacao div.section-text div.apresentacao {
     width: 100%;
     height: auto;
     margin: 56px 300px 15px 15px;
-    color: #FFF;
 }
 
-div.container section div.section-text div.apresentacao h1 {
+div.container section.apresentacao div.section-text div.apresentacao h1 {
     text-align: center;
     font-weight: 900;
     font-size: 32px;
@@ -118,29 +126,97 @@ div.container section div.section-text div.apresentacao h1 {
     margin-bottom: 40px;
 }
 
-div.container section div.section-text div.apresentacao p {
+div.container section.apresentacao div.section-text div.apresentacao p {
     font-weight: 500;
     font-size: 28px;
     mix-blend-mode: normal;
 }
 
-div.container section div.section-text div.apresentacao p span{
+p span {
     color: #FCDC8F;
 }
 
-div.container section div.section-text div.apresentacao p:nth-child(2) { 
+div.container section.apresentacao div.section-text div.apresentacao p:nth-child(2) {
     margin-left: 60px;
 }
 
-div.container section div.section-text div.apresentacao p:nth-child(3) {
-    text-align: center;
-    margin-left: 180px;
+div.container section.apresentacao div.section-text div.apresentacao p:nth-child(3) {
+    text-align: right;
+    margin-right: 60px;
 }
 
-div.container section div.section-img img {
+div.container section.apresentacao div.section-img img {
     position: relative;
     width: 207px;
     height: 207px;
     border-radius: 100px;
     margin-right: 15px;
+}
+
+div.container section.sobre {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: #222222;
+}
+
+div.container section.sobre div.section-sobre {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 50px 190px;
+}
+
+div.container section.sobre div.section-sobre p {
+    text-align: justify-all;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+div.container section.projetos {
+    display: flex;
+    width: 100%;
+    height: 730px;
+    background-color: #181818;
+}
+
+div.container section.projetos div.section-projetos {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 50px 175px;
+}
+
+div.container section.projetos div.section-projetos div.carroussel {
+    width: auto;
+    height: 230px;
+    margin-top: 28px;
+    background-color: #FCDC8F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px #a0a0a0;
+    border-radius: 15px;
+}
+
+div.container section.projetos div.grid-projetos {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+div.container section.projetos div.grid-projetos div {
+    height: 230px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: #FCDC8F;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+div.container section.projetos div.grid-projetos div:hover {
+    transform: scale(1.1); 
 }
