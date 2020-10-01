@@ -94,7 +94,7 @@ div.container {
 div.container section.apresentacao {
     width: 100%;
     height: 280px;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg1.jpg");
     display: grid;
     grid-template-columns: 40% 60%;
 }
