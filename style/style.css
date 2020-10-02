@@ -13,6 +13,11 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: #181818;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -93,7 +98,7 @@ div.container {
 
 div.container section.apresentacao {
     width: 100%;
-    height: 280px;
+    min-height: 280px;
     background-image: url("../img/bg.jpg");
     display: grid;
     grid-template-columns: 40% 60%;
@@ -146,7 +151,6 @@ div.container section.apresentacao div.section-text div.apresentacao p:nth-child
 }
 
 div.container section.apresentacao div.section-img img {
-    position: relative;
     width: 207px;
     height: 207px;
     border-radius: 100px;
@@ -156,8 +160,8 @@ div.container section.apresentacao div.section-img img {
 div.container section.sobre {
     display: flex;
     width: 100%;
-    height: 350px;
-    background-color: #222222;
+    min-height: 350px;
+    background-color: #202020;
 }
 
 div.container section.sobre div.section-sobre {
@@ -178,7 +182,7 @@ div.container section.sobre div.section-sobre p {
 div.container section.projetos {
     display: flex;
     width: 100%;
-    height: 730px;
+    min-height: 730px;
     background-color: #181818;
 }
 
@@ -187,16 +191,6 @@ div.container section.projetos div.section-projetos {
     height: auto;
     justify-content: center;
     margin: 50px 175px;
-}
-
-div.container section.projetos div.section-projetos div.carroussel {
-    width: auto;
-    height: 230px;
-    margin-top: 28px;
-    background-color: #FCDC8F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 5px #a0a0a0;
-    border-radius: 15px;
 }
 
 div.container section.projetos div.grid-projetos {
@@ -218,5 +212,99 @@ div.container section.projetos div.grid-projetos div {
 }
 
 div.container section.projetos div.grid-projetos div:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+div.container section.timeline {
+    display: flex;
+    width: 100%;
+    min-height: 420px;
+    background-color: #202020;
+}
+
+div.container section.timeline div.section-timeline {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 50px 150px;
+}
+
+div.container section.timeline div.section-timeline div.timeline-img {
+    width: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+div.container section.conhecimentos {
+    display: flex;
+    width: 100%;
+    min-height: 730px;
+    background-color: #181818;
+}
+
+div.container section.conhecimentos div.section-conhecimentos {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 50px 175px;
+}
+
+div.container section.conhecimentos div.grid-conhecimentos {
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+div.container section.conhecimentos div.grid-conhecimentos div {
+    height: 230px;
+    flex-grow: 1;
+    flex-basis: 320px;
+    background-color: #FCDC8F;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+div.container section.conhecimentos div.grid-conhecimentos div:hover {
+    transform: scale(1.05);
+}
+
+div.container footer {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    background-color: #202020;
+}
+
+div.container footer div.footer {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    margin: 44px 190px;
+}
+
+div.container footer div.footer p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+div.container footer div.icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+div.container footer div.icons a {
+    margin: 10px;
+}
+
+div.container footer div.icons a img{
+    width: 20px;
+    height: 20px;
 }
