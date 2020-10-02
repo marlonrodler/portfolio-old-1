@@ -276,6 +276,7 @@ div.container footer {
     width: 100%;
     min-height: 150px;
     background-color: #202020;
+    align-items: center;
 }
 
 div.container footer div.footer {
@@ -292,12 +293,17 @@ div.container footer div.footer p {
     line-height: 28px;
 }
 
+div.container footer div.footer a {
+    text-decoration: none;
+    color: #FCDC8F;
+}
+
 div.container footer div.icons {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 div.container footer div.icons a {
