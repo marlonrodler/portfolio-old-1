@@ -72,11 +72,6 @@ div.container-nav div.nav div.nav-left a {
     align-items: center;
 }
 
-div.container-nav div.nav div.nav-right ul li a:hover {
-    border-bottom-style: solid;
-    border-bottom-color: #FCDC8F;
-}
-
 div.container-nav div.nav div.nav-right {
     display: flex;
     justify-content: right;
@@ -96,14 +91,17 @@ div.container-nav div.nav div.nav-right ul li a {
     font-weight: 500;
     font-size: 22px;
     align-items: center;
+    transition: all 0.8s;
+}
+
+div.container-nav div.nav div.nav-right ul li a:hover {
+    border-bottom: 1.5px solid #FCDC8F;
+    color: #FCDC8F;
+    /* border-bottom-color: #FCDC8F; */
 }
 
 div.container-nav div.nav div.nav-right ul li+li {
     margin-left: 35px;
-}
-
-div.container-nav div.nav div.nav-right ul li a:hover {
-    color: #FCDC8F;
 }
 
 div.container {
